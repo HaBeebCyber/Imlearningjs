@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(44, 40, 40);
+}
+.container {
+  align-items: center;
+  margin: 10% 50% 30% 15%;
+}
+.container input {
+  color: rgb(83, 83, 151);
+  border: none;
+  width: 23em;
+  height: 4em;
+}
+.container button {
+  padding: 1em;
+  border-radius: 30px;
+}
+p{
+    color: aliceblue;
+}

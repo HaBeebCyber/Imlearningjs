@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <input type="number" id="userInput" placeholder="Enter a number range (3 and above)">
+        <button id="submit" onclick="checkFizzBuzz()">Check FizzBuzz</button>
+        <p id="showResult"></p>
+    </div>
+    <script>
+    //   for (var i = 100; i >= 0; i--) {
+    //     console.log(i + " Hello world");
+    //   }
+        function checkFizzBuzz(){
+            var userInput = Number(document.getElementById('userInput').value);
+            var fizz = userInput%3;
+            var buzz = userInput%5;
+            let display = document.getElementById('showResult');
+            
+            if(userInput == "" || userInput == 0 || userInput == 1 || userInput == 2){
+                display.innerHTML = `<span>Please enter a number from 3 and above</span>`;
+                console.log("Please enter a number from 3 and above");
+            }
+            else if(fizz == 0){
+                if(buzz == 0){
+                    display.innerHTML = `<span>Fizz Buzz</span>`;
+                    console.log('FizzBuzz')
+                }
+                else{
+                    display.innerHTML = `<span>Fizz</span>`;
+                    console.log('Fizz')
+                }
+            }
+            else if(buzz == 0){
+                display.innerHTML = `<span>Buzz</span>`;
+                console.log("Buzz");
+            }
+            else if(buzz != 0 && fizz != 0){
+                display.innerHTML = `<span>Not fizzbuzz</span>`;
+                console.log("Not fizzbuzz");
+            }
+            
+        }
+        // for (var i = 100; i >= 0; i--) {
+        //     var e = i%2
+        //     if(e == 0){
+        //             // var i 
+        //         console.log(i + " Even");
+        //     }else{
+        //         console.log(i + " Odd");
+        //     }
+        // }
+    </script>
+  </body>
+</html>
