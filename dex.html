@@ -11,6 +11,7 @@
         <input type="number" id="userInput" placeholder="Enter a number range (3 and above)">
         <button id="submit" onclick="checkFizzBuzz()">Check FizzBuzz</button>
         <p id="showResult"></p>
+        <span></span>
     </div>
     <script>
     //   for (var i = 100; i >= 0; i--) {
@@ -23,25 +24,25 @@
             let display = document.getElementById('showResult');
             
             if(userInput == "" || userInput == 0 || userInput == 1 || userInput == 2){
-                display.innerHTML = `<span>Please enter a number from 3 and above</span>`;
+                display.innerHTML = `Please enter a number from 3 and above`;
                 console.log("Please enter a number from 3 and above");
             }
             else if(fizz == 0){
                 if(buzz == 0){
-                    display.innerHTML = `<span>Fizz Buzz</span>`;
+                    display.innerHTML = `Fizz Buzz`;
                     console.log('FizzBuzz')
                 }
                 else{
-                    display.innerHTML = `<span>Fizz</span>`;
+                    display.innerHTML = `Fizz`;
                     console.log('Fizz')
                 }
             }
             else if(buzz == 0){
-                display.innerHTML = `<span>Buzz</span>`;
+                display.innerHTML = `Buzz`;
                 console.log("Buzz");
             }
             else if(buzz != 0 && fizz != 0){
-                display.innerHTML = `<span>Not fizzbuzz</span>`;
+                display.innerHTML = `Not fizzbuzz`;
                 console.log("Not fizzbuzz");
             }
             
