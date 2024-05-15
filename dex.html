@@ -14,13 +14,13 @@
         <span></span>
     </div>
     <script>
-    //   for (var i = 100; i >= 0; i--) {
+    //   for (let i = 100; i >= 0; i--) {
     //     console.log(i + " Hello world");
     //   }
         function checkFizzBuzz(){
-            var userInput = Number(document.getElementById('userInput').value);
-            var fizz = userInput%3;
-            var buzz = userInput%5;
+            let userInput = Number(document.getElementById('userInput').value);
+            let fizz = userInput%3;
+            let buzz = userInput%5;
             let display = document.getElementById('showResult');
             
             if(userInput == "" || userInput == 0 || userInput == 1 || userInput == 2){
@@ -47,10 +47,10 @@
             }
             
         }
-        // for (var i = 100; i >= 0; i--) {
-        //     var e = i%2
+        // for (let i = 100; i >= 0; i--) {
+        //     let e = i%2
         //     if(e == 0){
-        //             // var i 
+        //             // let i 
         //         console.log(i + " Even");
         //     }else{
         //         console.log(i + " Odd");
