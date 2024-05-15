@@ -1,13 +1,13 @@
-let display = document.getElementById('display')
-function checkResult(){
-    let myInput = Number(document.getElementById('score').value)
-    console.log(myInput);
+let display = document.getElementById("display");
+function checkResult() {
+  let myInput = Number(document.getElementById("score").value);
+  console.log(myInput);
 
-    if (myInput > 0 && myInput < 40){
-        display.innerHTML = `<span>you failed</span>`;
-    }else if(myInput>=40){
-        display.innerHTML = `<span>You tried</span>`;
-    }
+  if (myInput > 0 && myInput < 40) {
+    display.innerHTML = `<span>you failed</span>`;
+  } else if (myInput >= 40) {
+    display.innerHTML = `<span>You tried</span>`;
+  }
 }
 
 //Check Out
@@ -16,10 +16,9 @@ function checkResult(){
 //**For loop */
 //**while loop */
 
-for (let i =0; i >= 10; i++ ){
-    console.log(i)
+for (let i = 0; i >= 10; i++) {
+  console.log(i);
 }
-
 
 //fizz buzz
 //fizz = no divisible by 3
@@ -28,8 +27,14 @@ for (let i =0; i >= 10; i++ ){
 //else = not applicable
 
 // concertination
-let food = "Yam"
-let stew = "Peppered snail stew"
-let protein = "beans"
+let food = "Yam";
+let stew = "Peppered snail stew";
+let protein = "beans";
 
-console.log (`I love to eat ${food} garnished with ${stew} and ${protein}`)
+console.log(`I love to eat ${food} garnished with ${stew} and ${protein}`);
+
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+}
