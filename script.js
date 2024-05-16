@@ -33,8 +33,20 @@ let protein = "beans";
 
 console.log(`I love to eat ${food} garnished with ${stew} and ${protein}`);
 
-for (let i = 1; i <= 5; i++) {
-  for (let j = 1; j <= 10; j++) {
-    console.log(`${i} * ${j} = ${i * j}`);
+// for (let i = 1; i <= 5; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     console.log(`${i} * ${j} = ${i * j}`);
+//     lol.innerHTML += `</br>${i} * ${j} = ${i * j}`;
+//   }
+// }
+
+
+
+for (let i = 1; i <= 12; i++) {
+  let table = "<table>";
+  for (let j = 1; j <= 12; j++) {
+      table += "<tr><td>" + j + " * " + i + " = " + (j * i) + "</td></tr>";
   }
+  table += "</table>";
+  document.getElementById("lol").innerHTML += table;
 }

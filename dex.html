@@ -13,6 +13,12 @@
         <p id="showResult"></p>
         <span></span>
     </div>
+    <div id="multiplicationTablesContainer"></div>
+
+
+
+
+
     <script>
     //   for (let i = 100; i >= 0; i--) {
     //     console.log(i + " Hello world");
@@ -56,6 +62,17 @@
         //         console.log(i + " Odd");
         //     }
         // }
+        for (let i = 1; i <= 12; i++) {
+    let table = "<table>";
+    for (let j = 1; j <= 12; j++) {
+        table += "<tr><td>" + j + " * " + i + " = " + (j * i) + "</td></tr>";
+    }
+    table += "</table>";
+    let container = document.createElement("div");
+    container.style.display = "inline-block"; // Set display property
+    container.innerHTML = table;
+    document.getElementById("multiplicationTablesContainer").appendChild(container);
+}
     </script>
   </body>
 </html>
